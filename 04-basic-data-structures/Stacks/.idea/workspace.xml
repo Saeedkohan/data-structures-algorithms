@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/LiveTemplatesHousekeeping/HotspotSessionHintIsShown/@EntryValue" value="true" type="bool" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Stacks" targetName="Stacks" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75a1057a-5621-440b-84db-4230c0e842d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/.idea/Bineary Search.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Bineary Search/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/.idea/Linear Search.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04-Search/Linear Search/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05-ComplexityAnalysisofAlgorithms/Vec-Big O.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/06-basic-data-structures.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/.idea/array.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/Python/.idea/array.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/Python/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/Python/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/Python/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/Python/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/Python/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/Python/array.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/.idea/Doubly Linked List.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Doubly Linked List/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/.idea/C++.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/C++/main.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/Python/circular-doubly-linked-list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linked Structures/Singly Linked List/Python/singly_linked_list.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2025" />
+    <option name="minorVersion" value="1.1" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="3758p69WltSbGJhK703iPVyOUoo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "E:/Programming_Project/DSA/data-structures-algorithms/06-basic-data-structures/Stacks/main.cpp",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stacks" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Stacks" TARGET_NAME="Stacks" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Stacks" RUN_TARGET_NAME="Stacks">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75a1057a-5621-440b-84db-4230c0e842d3" name="Changes" comment="" />
+      <created>1766181752910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766181752910</updated>
+      <workItem from="1766181756026" duration="1726000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
