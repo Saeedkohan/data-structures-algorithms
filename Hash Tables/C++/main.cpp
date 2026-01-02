@@ -15,12 +15,24 @@ public:
     }
 };
 
+
 class HashTable {
 private:
     static const int SIZE = 7;
-    Node *dataMap[SIZE];
+    Node *dataMap[SIZE] = {nullptr};
 
 public:
+    ~HashTable() {
+        for (int i = 0; i < SIZE; i++) {
+            Node *temp = dataMap[i];
+            while (temp) {
+                Node *toDelete = temp;
+                temp = temp->next;
+                delete toDelete;
+            }
+        }
+    }
+
     void printTable() {
         for (int i = 0; i < SIZE; i++) {
             std::cout << i << ":" << std::endl;
@@ -35,27 +47,29 @@ public:
     }
 
 
-    int hash(std::string key) {
+    int hash(const std::string &key) {
         int hash = 0;
-        for (int i = 0; i < key.length(); i++) {
-            int asciiValue = int(key[i]);
-            hash = (hash + asciiValue * 23) % SIZE;
+        for (char c: key) {
+            hash = (hash + int(c) * 23) % SIZE;
         }
         return hash;
     }
 
-    void set(std::string key, int value) {
+    void set(const std::string &key, int value) {
         int index = hash(key);
-        Node *newNode = new Node(key, value);
-        if (dataMap[index] == nullptr) {
-            dataMap[index] = newNode;
-        } else {
-            Node *temp = dataMap[index];
-            while (temp->next != nullptr) {
-                temp = temp->next;
+        Node *temp = dataMap[index];
+
+        while (temp) {
+            if (temp->key == key) {
+                temp->value = value;
+                return;
             }
-            temp->next = newNode;
+            temp = temp->next;
         }
+
+        Node *newNode = new Node(key, value);
+        newNode->next = dataMap[index];
+        dataMap[index] = newNode;
     }
 
     int get(std::string key) {
@@ -70,6 +84,7 @@ public:
         return 0;
     }
 
+
     std::vector<std::string> keys() {
         std::vector<std::string> keys;
         for (int i = 0; i < SIZE; i++) {
@@ -82,3 +97,42 @@ public:
         return keys;
     }
 };
+
+int main() {
+    HashTable ht;
+
+    ht.set("apple", 10);
+    ht.set("banana", 20);
+    ht.set("orange", 30);
+    ht.set("grape", 40);
+    ht.set("lemon", 50);
+
+
+    ht.set("elppa", 100);
+    ht.set("ananab", 200);
+
+    ht.printTable();
+
+
+    std::cout << "apple  -> " << ht.get("apple") << std::endl;
+    std::cout << "banana -> " << ht.get("banana") << std::endl;
+    std::cout << "orange -> " << ht.get("orange") << std::endl;
+    std::cout << "grape  -> " << ht.get("grape") << std::endl;
+    std::cout << "lemon  -> " << ht.get("lemon") << std::endl;
+
+
+    std::cout << "watermelon -> " << ht.get("watermelon") << std::endl;
+
+    ht.set("apple", 999);
+    std::cout << "apple -> " << ht.get("apple") << std::endl;
+
+    std::vector<std::string> allKeys = ht.keys();
+    for (const auto& key : allKeys) {
+        std::cout << key << " ";
+    }
+    std::cout << std::endl;
+
+    ht.printTable();
+
+    return 0;
+}
