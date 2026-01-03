@@ -1,77 +1,77 @@
-# 🌳 ساختمان داده‌ها: مبحث **درخت (Tree)**
+# 🌳 Data Structures: The **Tree** Concept
 
-در این بخش، به بررسی جامع و عمیق مفاهیم اساسی مربوط به ساختمان داده **درخت** (Tree) می‌پردازیم. درخت یک ساختار داده غیرخطی و سلسله مراتبی است که در علوم کامپیوتر برای نمایش روابط والد-فرزندی و سازماندهی داده‌ها استفاده می‌شود.
+This repository provides a comprehensive overview of the fundamental concepts related to the **Tree** data structure. A Tree is a non-linear, hierarchical data structure widely used in computer science to represent parent-child relationships and organize data efficiently.
 
 ---
 
-## ۱. عناصر و مفاهیم بنیادی درخت (Fundamental Concepts)
+## 1. Fundamental Tree Components (Basic Concepts)
 
-| مفهوم | تعریف | توضیحات کلیدی |
+| Concept | Definition | Key Insights |
 | :--- | :--- | :--- |
-| **Tree (درخت)** | یک مجموعه از گره‌ها (Nodes) که با یال‌ها (Edges) به هم متصل‌اند و فاقد هرگونه دور (Cycle) یا حلقه بسته‌ای است. | هر درخت دقیقاً یک گره ریشه (Root) دارد. |
-| **Root (ریشه)** | بالاترین گره در ساختار درخت که هیچ والد (Parent) ندارد. | نقطه شروع برای پیمایش در عملیات‌های درختی. |
-| **Node (گره)** | جزء اساسی درخت که حامل داده است. | در هر گره، علاوه بر داده، اشاره‌گرهایی به گره‌های فرزند وجود دارد. |
-| **Edge (یال)** | پیوند یا خطی که یک گره والد را به گره فرزند متصل می‌کند و نشان‌دهنده رابطه سلسله مراتبی است. | درختی با $N$ گره، دارای $N-1$ یال است. |
-| **Parent (والد)** | گره‌ای که یک سطح بالاتر از گره‌های فرزند خود قرار دارد و یک یال مستقیم به آن‌ها دارد. | هر گره به جز ریشه، یک والد دارد. |
-| **Child (فرزند)** | گره‌ای که یک سطح پایین‌تر از گره والد خود قرار دارد و توسط یک یال از والد خود منشعب می‌شود. |
-| **Sibling (خواهر و برادر)** | گره‌هایی که والد مشترک دارند. |
-| **Degree of a Node (درجه نود)** | تعداد زیردرخت‌های مستقیم یک گره، یا به عبارتی تعداد فرزندان آن. | برای گره برگ، درجه صفر است. |
-| **Leaf Node (گره برگ / خارجی)** | گره‌ای که هیچ فرزندی ندارد و در انتهای مسیرها قرار می‌گیرد. |
-| **Internal Node (گره داخلی)** | گره‌ای که حداقل یک فرزند دارد. |
+| **Tree** | A collection of nodes (Nodes) connected by edges (Edges) that contains no cycles or closed loops. | Every tree has exactly one **Root** node. |
+| **Root** | The topmost node in the tree structure, which has no parent. | The starting point for traversing and manipulating the tree. |
+| **Node** | The basic entity in the tree that holds data. | Contains a value and pointers to its children nodes. |
+| **Edge** | A link or line connecting a parent node to a child node, representing the hierarchical relationship. | A tree with $N$ nodes has exactly $N-1$ edges. |
+| **Parent** | A node that is one level above its children nodes and has a direct edge to them. | Every node, except the Root, has exactly one parent. |
+| **Child** | A node that is one level below its parent node, branching off from the parent via an edge. |
+| **Sibling** | Nodes that share the same parent node. | They are at the same level of the tree. |
+| **Degree of a Node** | The number of direct subtrees or, equivalently, the number of children of that node. | For a Leaf node, the degree is zero. |
+| **Leaf Node (External Node)** | A node that has no children and is located at the endpoints of the paths. |
+| **Internal Node** | A node that has at least one child. | This includes the Root if the tree has more than one node. |
 
-### $\rightarrow$ **\[محل قرارگیری عکس: شماتیک یک درخت و مشخص کردن Root, Parent, Child, Sibling, Leaf]**
+![Tree Fundamental Components: Root, Parent, Child, Sibling, Leaf](assets/image1.png)
 
 ---
 
-## ۲. معیارهای ساختاری و اندازه‌گیری
+## 2. Structural Metrics and Measurements
 
-| معیار | تعریف | محاسبه و اهمیت |
+| Metric | Definition | Calculation and Significance |
 | :--- | :--- | :--- |
-| **Degree of a Tree (درجه درخت)** | حداکثر درجه موجود در میان تمام گره‌های درخت. | این مقدار محدودیت تعداد فرزندان هر گره را تعیین می‌کند (مثلاً در درخت دودویی، حداکثر ۲). |
-| **Level (سطح)** | فاصله یک گره از ریشه. (سطح ریشه معمولاً **0** یا **1** در نظر گرفته می‌شود.) | اگر سطح ریشه ۰ باشد، Level همان Depth است. |
-| **Depth (عمق)** | طول مسیر از **ریشه** تا گره مورد نظر (تعداد یال‌ها). | عمق ریشه صفر است. |
-| **Height (ارتفاع)** | طولانی‌ترین مسیر از آن گره تا **عمیق‌ترین گره برگ** زیر آن. | **ارتفاع درخت** برابر با ارتفاع گره ریشه است. |
-| **Path (مسیر)** | دنباله‌ای از گره‌های متصل به هم که از یک گره شروع شده و به گره دیگری ختم می‌شود. | طول مسیر تعداد یال‌های موجود در آن است. |
-| **Ancestor / Descendant (جد / نسل)** | اگر گره $A$ در مسیر ریشه به $B$ باشد، $A$ **جد** $B$ و $B$ **نسل** $A$ است. |
+| **Degree of a Tree** | The maximum degree found among all nodes in the tree. | This value defines the maximum number of children allowed (e.g., maximum 2 for a Binary Tree). |
+| **Level** | The distance of a node from the root. (Root is usually at Level **0** or **1**). | If the Root is Level 0, Level is the same as Depth. |
+| **Depth** | The length of the path from the **Root** to the node (number of edges). | The depth of the root is 0. |
+| **Height** | The length of the longest path from that node to the **deepest Leaf Node** below it. | The **Height of the Tree** is the height of the Root node. |
+| **Path** | A sequence of connected nodes, starting from one node and ending at another. | The path length is the number of edges involved. |
+| **Ancestor / Descendant** | If node $A$ is on the path from the Root to node $B$, then $A$ is an **Ancestor** of $B$, and $B$ is a **Descendant** of $A$. | The Parent is the immediate Ancestor. |
 
 ---
 
-## ۳. دسته‌بندی و انواع درخت‌ها (Tree Types)
+## 3. Tree Classification and Types
 
-| نوع درخت | ویژگی‌های کلیدی |
+| Tree Type | Key Features and Definitions |
 | :--- | :--- |
-| **Ordered vs Unordered Tree** | **Ordered:** ترتیب قرارگیری زیردرخت‌ها یا فرزندان (چپ و راست) مهم است. / **Unordered:** ترتیب فرزندان اهمیتی ندارد. |
-| **General Tree (درخت عمومی)** | هیچ محدودیتی در تعداد فرزندان وجود ندارد (درجه درخت نامحدود). |
-| **Binary Tree (درخت دودویی - BT)** | هر گره **حداکثر دو فرزند** دارد (فرزند چپ و فرزند راست). (درجه $\leq 2$) |
-| **Full Binary Tree (درخت دودویی کامل)** | هر گره غیربرگی (Non-Leaf)، **دقیقاً دو فرزند** دارد. |
-| **Perfect Binary Tree (درخت دودویی عالی)** | درختی است که هم **Full** باشد و هم تمام گره‌های برگ آن در **یک سطح** قرار داشته باشند. |
-| **Complete Binary Tree (درخت دودویی کامل)** | تمام سطوح آن، به جز شاید آخرین سطح، کاملاً پر هستند و گره‌ها در آخرین سطح **تا حد امکان به چپ** متمایل شده‌اند. | ساختار بنیادی **Heap** (کپه). |
-| **Skewed Tree (درخت کج)** | درختی که هر گره آن (به جز برگ)، فقط یک فرزند دارد و تمام گره‌ها در یک مسیر مستقیم (فقط چپ یا فقط راست) قرار می‌گیرند. |
-| **Degenerate Tree (درخت انحطاط یافته)** | یک درخت دودویی که ساختار آن شبیه به یک **لیست پیوندی** عمل می‌کند. (هر گره حداکثر یک فرزند دارد.) |
-| **Balanced Tree (درخت متوازن)** | درختی که اختلاف ارتفاع بین زیردرخت چپ و راست هر گره، از یک مقدار مشخص (معمولاً ۱) بیشتر نشود تا کارایی $O(\log N)$ حفظ گردد. | مثال: **AVL** و **Red-Black Tree**. |
+| **Ordered vs Unordered Tree** | **Ordered:** The order of subtrees/children (left/right) matters (**BST**). / **Unordered:** The order of children does not matter. |
+| **General Tree** | There is no limit on the number of children a node can have (unlimited degree). |
+| **Binary Tree (BT)** | Every node has a maximum of **two children** (a left child and a right child). (Degree $\leq 2$). |
+| **Full Binary Tree** | Every non-leaf node has **exactly two children**. |
+| **Perfect Binary Tree** | A tree that is both **Full** AND all of its leaf nodes are at the **same level**. | At height $h$, it has exactly $2^{h+1} - 1$ nodes. |
+| **Complete Binary Tree** | All levels, except possibly the last, are completely filled, and nodes in the last level are as far **left** as possible. | The underlying structure for the **Heap** data structure. |
+| **Skewed Tree** | A tree where every node (except the leaf) has only one child, forming a single path (either all left or all right). |
+| **Degenerate Tree** | A Binary Tree where the structure behaves like a **Linked List**. (Each parent node has at most one child.) | Represents the worst-case scenario for performance. |
+| **Balanced Tree** | A tree where the height difference between the left and right subtrees of any node does not exceed a small constant (usually 1). | Examples: **AVL** and **Red-Black Tree**. Ensures $O(\log N)$ performance for main operations. |
 
-### $\rightarrow$ **\[محل قرارگیری عکس: مقایسه بصری و تفاوت میان Full BT, Complete BT, Perfect BT]**
+![Comparison of Full, Complete, and Perfect Binary Trees](assets/image2.png)
 
 ---
 
-## ۴. پیمایش درخت (Tree Traversal)
+## 4. Tree Traversal
 
-پیمایش فرآیند بازدید از هر گره در درخت به صورت منظم و تنها یک بار است. این عملیات به دو دسته اصلی تقسیم می‌شود:
+Traversal is the process of visiting every node in the tree structure exactly once in a systematic way. This operation is divided into two main categories:
 
-### الف) پیمایش جستجوی اول سطح (Breadth-First Search - BFS)
+### A) Breadth-First Search (BFS) Traversal
 
-* **روش:** پیمایش به صورت **سطح به سطح** (Level by Level)، از ریشه آغاز شده و به سمت پایین حرکت می‌کند.
-* **ساختار داده مورد نیاز:** **Queue (صف)**.
-* **سفارش بازدید:** گره‌های سطح ۰، سپس گره‌های سطح ۱، و...
+* **Method:** Visits nodes **level by level** (Layer by Layer), starting from the root and moving downwards.
+* **Required Data Structure:** **Queue**.
+* **Visit Order:** Level 0 nodes, then Level 1 nodes, and so on.
 
-### ب) پیمایش جستجوی اول عمق (Depth-First Search - DFS)
+### B) Depth-First Search (DFS) Traversal
 
-DFS از الگوی بازگشتی (Recursion) یا استفاده از Stack برای پیمایش عمقی استفاده می‌کند و سه حالت اصلی دارد:
+DFS uses recursion or a **Stack** to traverse the tree deeply and has three primary methods:
 
-| روش DFS | ترتیب بازدید | کاربرد رایج |
+| DFS Method | Visit Order | Common Application |
 | :--- | :--- | :--- |
-| **Inorder (پیمایش میانی)** | (زیردرخت چپ) $\rightarrow$ **گره** $\rightarrow$ (زیردرخت راست) | در **BST** (درخت جستجوی دودویی)، عناصر را به صورت **مرتب شده** بازیابی می‌کند. |
-| **Preorder (پیمایش پیشین)** | **گره** $\rightarrow$ (زیردرخت چپ) $\rightarrow$ (زیردرخت راست) | برای ایجاد یک **کپی** کامل از درخت و یا نمایش عبارات پیشوندی استفاده می‌شود. |
-| **Postorder (پیمایش پسین)** | (زیردرخت چپ) $\rightarrow$ (زیردرخت راست) $\rightarrow$ **گره** | برای **حذف** ایمن یک درخت (از برگ‌ها به سمت ریشه) و یا ارزیابی عبارات پسوندی. |
+| **Inorder** | (Left Subtree) $\rightarrow$ **Node** $\rightarrow$ (Right Subtree) | Retrieves elements in **sorted order** in a **Binary Search Tree (BST)**. |
+| **Preorder** | **Node** $\rightarrow$ (Left Subtree) $\rightarrow$ (Right Subtree) | Used to create a complete **copy** of the tree structure or express prefix notation. |
+| **Postorder** | (Left Subtree) $\rightarrow$ (Right Subtree) $\rightarrow$ **Node** | Used for the safe **deletion** of the tree (from leaves up to the root) and expressing postfix notation. |
 
-### $\rightarrow$ **\[محل قرارگیری عکس: نمایش مسیر پیمایش DFS (Inorder, Preorder, Postorder) بر روی یک درخت نمونه]**
+![Visualization of DFS Traversal: Inorder, Preorder, Postorder](assets/image3.png)
