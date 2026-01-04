@@ -2,6 +2,8 @@
 
 This diagram illustrates the step-by-step execution of the Depth-First Search (DFS) algorithm on a graph, starting from Node **A**. DFS explores as far as possible along each branch before backtracking. It utilizes a **Stack** data structure (Last-In, First-Out) to manage which nodes to visit next.
 
+![DFS Algorithm Steps](assets/image1.png)
+
 ---
 
 ### Key Concepts
